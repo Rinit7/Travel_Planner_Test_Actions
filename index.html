@@ -8,23 +8,27 @@
 </head>
 <body>
 
-  <header>
-    <h1>🌍 Travel Planner</h1>
-    <p>Discover destinations and plan your next adventure!</p>
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>🌍 Travel Planner</h1>
+      <p>Plan your next adventure with ease</p>
+    </div>
   </header>
 
-  <section class="search-box">
-    <input type="text" placeholder="Search places...">
-    <button>Search</button>
+  <!-- Search / Filter (Static for now) -->
+  <section class="search-section">
+    <input type="text" placeholder="Search destinations..." />
   </section>
 
-  <section class="card-container">
+  <!-- Destination Cards -->
+  <main class="cards-container">
     <div class="card">
       <img src="https://source.unsplash.com/400x250/?paris" alt="Paris">
       <div class="card-body">
         <h3>Paris, France</h3>
-        <p>Known for its iconic Eiffel Tower, art, and cafés.</p>
-        <button class="btn">View Details</button>
+        <p>Famous for Eiffel Tower, art museums, and romantic streets.</p>
+        <span class="badge">Budget: $1500 - $2500</span>
       </div>
     </div>
 
@@ -32,8 +36,8 @@
       <img src="https://source.unsplash.com/400x250/?tokyo" alt="Tokyo">
       <div class="card-body">
         <h3>Tokyo, Japan</h3>
-        <p>A futuristic city blending culture, fashion, and tech.</p>
-        <button class="btn">View Details</button>
+        <p>Experience culture, technology, cuisine, and cherry blossoms.</p>
+        <span class="badge">Budget: $2000 - $3000</span>
       </div>
     </div>
 
@@ -41,11 +45,24 @@
       <img src="https://source.unsplash.com/400x250/?bali" alt="Bali">
       <div class="card-body">
         <h3>Bali, Indonesia</h3>
-        <p>Beautiful beaches, resorts, and tropical nature retreats.</p>
-        <button class="btn">View Details</button>
+        <p>Relax on beaches, explore waterfalls, and enjoy tropical vibes.</p>
+        <span class="badge">Budget: $800 - $1500</span>
       </div>
     </div>
-  </section>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?dubai" alt="Dubai">
+      <div class="card-body">
+        <h3>Dubai, UAE</h3>
+        <p>Luxury, shopping, desert adventures, and modern skyline.</p>
+        <span class="badge">Budget: $1800 - $2800</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Travel Planner. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
