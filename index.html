@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Planner</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+  <header class="hero">
     <h1>🌍 Travel Planner</h1>
-    <input id="searchInput" type="text" placeholder="Search destinations...">
+    <p>Find your next adventure destination</p>
+    <input id="searchInput" type="text" placeholder="Search by location or country...">
   </header>
 
   <main>
-    <div id="destinations" class="cards"></div>
+    <div id="destinations" class="card-grid"></div>
+
     <div id="detailsModal" class="modal hidden">
-      <div class="modal-content" id="modalContent"></div>
+      <div class="modal-box">
+        <button class="close-btn" onclick="closeModal()">✕</button>
+        <div id="modalContent"></div>
+      </div>
     </div>
   </main>
 

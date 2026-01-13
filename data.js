@@ -1,20 +1,23 @@
 const destinations = [
   {
-    name: "Paris, France",
-    highlights: ["Eiffel Tower", "Louvre Museum"],
-    bestTime: "April - June & September - November",
+    name: "Paris",
+    country: "France",
+    highlights: ["Eiffel Tower", "Louvre", "Seine River"],
+    bestTime: "Apr - Jun, Sep - Nov",
     budget: "$1500 - $2500"
   },
   {
-    name: "Tokyo, Japan",
-    highlights: ["Shibuya", "Mount Fuji"],
-    bestTime: "March - May & September - November",
+    name: "Tokyo",
+    country: "Japan",
+    highlights: ["Shibuya", "Mt. Fuji", "Cherry Blossoms"],
+    bestTime: "Mar - May, Sep - Nov",
     budget: "$2000 - $3000"
   },
   {
-    name: "Bali, Indonesia",
-    highlights: ["Beaches", "Ubud", "Waterfalls"],
-    bestTime: "April - October",
+    name: "Bali",
+    country: "Indonesia",
+    highlights: ["Beaches", "Waterfalls", "Temples"],
+    bestTime: "Apr - Oct",
     budget: "$800 - $1500"
   }
 ];
