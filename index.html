@@ -5,28 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Planner</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header class="hero">
     <h1>🌍 Travel Planner</h1>
-    <p>Find your next adventure destination</p>
-    <input id="searchInput" type="text" placeholder="Search by location or country...">
+    <p>Explore beautiful destinations across the world</p>
   </header>
 
-  <main>
-    <div id="destinations" class="card-grid"></div>
-
-    <div id="detailsModal" class="modal hidden">
-      <div class="modal-box">
-        <button class="close-btn" onclick="closeModal()">✕</button>
-        <div id="modalContent"></div>
-      </div>
+  <section class="cards">
+    <div class="card">
+      <h3>Paris, France</h3>
+      <p>Best for: Architecture, Museums, Romance</p>
+      <span class="badge">Budget: $1500 - $2500</span>
     </div>
-  </main>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+    <div class="card">
+      <h3>Tokyo, Japan</h3>
+      <p>Best for: Culture, Tech, Food</p>
+      <span class="badge">Budget: $2000 - $3000</span>
+    </div>
+
+    <div class="card">
+      <h3>Bali, Indonesia</h3>
+      <p>Best for: Beaches, Nature, Relaxation</p>
+      <span class="badge">Budget: $800 - $1500</span>
+    </div>
+
+    <div class="card">
+      <h3>Dubai, UAE</h3>
+      <p>Best for: Shopping, Luxury, Adventure</p>
+      <span class="badge">Budget: $1800 - $2800</span>
+    </div>
+
+    <div class="card">
+      <h3>Bangkok, Thailand</h3>
+      <p>Best for: Street food, Nightlife, Temples</p>
+      <span class="badge">Budget: $700 - $1200</span>
+    </div>
+  </section>
+
 </body>
 </html>
