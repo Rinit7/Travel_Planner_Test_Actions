@@ -1,34 +1,38 @@
-const container = document.getElementById("locations");
-const searchInput = document.getElementById("search");
+const container = document.getElementById("destinations");
+const modal = document.getElementById("detailsModal");
+const modalContent = document.getElementById("modalContent");
+const searchInput = document.getElementById("searchInput");
 
-function render(data) {
+function renderCards(list) {
   container.innerHTML = "";
-  data.forEach(item => {
-    container.innerHTML += `
-      <div class="card">
-        <h2>${item.name}</h2>
-
-        <h3>📍 Places to Visit:</h3>
-        <ul>${item.places.map(p => `<li>${p}</li>`).join("")}</ul>
-
-        <h3>🍽 Local Food:</h3>
-        <ul>${item.food.map(f => `<li>${f}</li>`).join("")}</ul>
-
-        <h3>🧳 Itinerary:</h3>
-        <ul>${item.itinerary.map(i => `<li>${i}</li>`).join("")}</ul>
-      </div>
-    `;
+  list.forEach((d, i) => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `<h3>${d.name}</h3>`;
+    card.onclick = () => showDetails(d);
+    container.appendChild(card);
   });
 }
 
-// initial load
-render(TRAVEL_DATA);
+function showDetails(d) {
+  modalContent.innerHTML = `
+    <h2>${d.name}</h2>
+    <p><strong>Highlights:</strong> ${d.highlights.join(", ")}</p>
+    <p><strong>Best time:</strong> ${d.bestTime}</p>
+    <p><strong>Estimated Budget:</strong> ${d.budget}</p>
+    <button onclick="closeModal()">Close</button>
+  `;
+  modal.classList.remove("hidden");
+}
 
-// search filter
-searchInput.addEventListener("keyup", (e) => {
-  const value = e.target.value.toLowerCase();
-  const filtered = TRAVEL_DATA.filter(item =>
-    item.name.toLowerCase().includes(value)
-  );
-  render(filtered);
+function closeModal() {
+  modal.classList.add("hidden");
+}
+
+searchInput.addEventListener("input", e => {
+  const q = e.target.value.toLowerCase();
+  const filtered = destinations.filter(d => d.name.toLowerCase().includes(q));
+  renderCards(filtered);
 });
+
+renderCards(destinations);
