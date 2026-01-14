@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,67 +7,103 @@
 }
 
 body {
-  background: #f6f8fa;
+  background: #f7f9fc;
   color: #333;
 }
 
-/* Hero/Header */
+/* Hero */
 .hero {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
+  background: linear-gradient(135deg, #0066ff, #00c6ff);
   color: #fff;
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.1rem;
   opacity: 0.9;
+  margin-bottom: 20px;
 }
 
-/* Search Section */
-.search-section {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.search-section input {
-  width: 80%;
-  max-width: 400px;
-  padding: 12px 15px;
+.btn-primary {
+  background: #fff;
+  color: #0066ff;
+  border: none;
+  padding: 12px 24px;
   border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-/* Cards Container */
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+/* About */
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Categories */
+.categories {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.cat-card {
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  font-weight: 600;
+}
+
+/* Destinations */
+.destinations {
+  text-align: center;
+  margin: 40px 0;
+}
+
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 25px;
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  margin-bottom: 50px;
 }
 
-/* Individual Card */
 .card {
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
+  transition: 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
 }
 
 .card img {
@@ -80,43 +116,60 @@ body {
   padding: 16px;
 }
 
-.card-body h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
-}
-
-.card-body p {
-  font-size: 0.95rem;
-  opacity: 0.85;
-  margin-bottom: 10px;
-}
-
 .badge {
   display: inline-block;
-  background: #ffe7c2;
-  color: #6e4e00;
+  margin-top: 6px;
+  background: #fff4d3;
   padding: 6px 12px;
   border-radius: 8px;
-  font-weight: 600;
   font-size: 0.85rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #eef4ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-grid {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.t-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  font-style: italic;
+}
+
+.t-card span {
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* CTA Banner */
+.cta-banner {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0066ff;
+  color: #fff;
+}
+
+.cta-banner h2 {
+  margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 25px 10px;
-  background: #fff;
-  border-top: 1px solid #e5e5e5;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
+  padding: 20px;
+  color: #777;
 }

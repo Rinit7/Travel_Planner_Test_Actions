@@ -8,67 +8,104 @@
 </head>
 <body>
 
-  <!-- Header / Hero -->
+  <!-- Hero -->
   <header class="hero">
     <div class="hero-content">
       <h1>🌍 Travel Planner</h1>
-      <p>Discover your next destination and plan your adventure!</p>
+      <p>Discover, explore and plan your next adventure effortlessly.</p>
+      <button class="btn-primary">Start Planning</button>
     </div>
   </header>
 
-  <!-- Search Bar -->
-  <section class="search-section">
-    <input type="text" placeholder="Search destinations...">
+  <!-- About Section -->
+  <section class="about">
+    <h2>Why Travel Planner?</h2>
+    <p>We make trip planning simple by curating the best destinations, estimated budgets, and travel experiences so you can focus on enjoying your journey.</p>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2>Explore by Category</h2>
+    <div class="category-grid">
+      <div class="cat-card">🏝️ Beaches</div>
+      <div class="cat-card">🏙️ Cities</div>
+      <div class="cat-card">⛰️ Mountains</div>
+      <div class="cat-card">🍜 Food</div>
+      <div class="cat-card">🕌 Culture</div>
+      <div class="cat-card">🚗 Road Trips</div>
+    </div>
   </section>
 
   <!-- Destination Cards -->
-  <main class="cards-container">
-    <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTJe8qiezQ0dF18MGyLrMMMf3mCoixrKUO9_lI4UBO7eyhB1fsBE42WRvT26rARykCEg1Nx9PTZ-1WXqH4KvLCjPTY&s=19" alt="Paris">
-      <div class="card-body">
-        <h3>Paris, France</h3>
-        <p>Famous for Eiffel Tower, art museums, and romantic streets.</p>
-        <span class="badge">Budget: $1500 - $2500</span>
+  <section class="destinations">
+    <h2>Featured Destinations</h2>
+    <div class="cards-container">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522098543979-ffc7f79b9d2a?auto=format&fit=crop&w=400&q=80">
+        <div class="card-body">
+          <h3>Paris, France</h3>
+          <p>Iconic architecture, romantic streets and world-famous cuisine.</p>
+          <span class="badge">$1500 - $2500</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?auto=format&fit=crop&w=400&q=80">
+        <div class="card-body">
+          <h3>Tokyo, Japan</h3>
+          <p>Technology meets tradition in a vibrant cultural hub.</p>
+          <span class="badge">$2000 - $3000</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80">
+        <div class="card-body">
+          <h3>Bali, Indonesia</h3>
+          <p>Tropical landscapes with beaches, temples and waterfalls.</p>
+          <span class="badge">$800 - $1500</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1542144582-1e0897b154d0?auto=format&fit=crop&w=400&q=80">
+        <div class="card-body">
+          <h3>Dubai, UAE</h3>
+          <p>Luxury shopping, modern architecture and desert adventures.</p>
+          <span class="badge">$1800 - $2800</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Travelers Say</h2>
+    <div class="testimonial-grid">
+      <div class="t-card">
+        “Super easy to use and helped me plan my Japan trip!”
+        <span>- Sarah</span>
+      </div>
+      <div class="t-card">
+        “Amazing curated destinations. Bali recommendations were perfect.”
+        <span>- Rahul</span>
+      </div>
+      <div class="t-card">
+        “Helped me estimate travel budgets instantly. Loved it!”
+        <span>- Alex</span>
       </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSSTgQnhXCb7jvoj_IDBLArwmIQzMgFh9nFXQjdsOyHJcrpMm1Kehe6udeibve6rtSZbjlbgQ29ZyOKueobTR9B5pk&s=19" alt="Tokyo">
-      <div class="card-body">
-        <h3>Tokyo, Japan</h3>
-        <p>Experience culture, technology, and cherry blossoms.</p>
-        <span class="badge">Budget: $2000 - $3000</span>
-      </div>
-    </div>
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <h2>Ready to Plan Your Next Trip?</h2>
+    <button class="btn-primary">Start Planning Now</button>
+  </section>
 
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Bali">
-      <div class="card-body">
-        <h3>Bali, Indonesia</h3>
-        <p>Relax on beaches, explore waterfalls, and enjoy tropical vibes.</p>
-        <span class="badge">Budget: $800 - $1500</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQBfP22DfwDwSheXTSlWLqVh6VnfT99vd08cLxWDlBLiWJONwxo422JfdMDQvBK2_mfRI_9q03LOe8lGFKcFyfXyf8&s=19" alt="Dubai">
-      <div class="card-body">
-        <h3>Dubai, UAE</h3>
-        <p>Luxury, shopping, desert adventures, and modern skyline.</p>
-        <span class="badge">Budget: $1800 - $2800</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRWbIJfxL0IBdg3GgohhQbOQrj0aOI-u5qZG86kpX3TfE2sdvuGMvePwSc7xuutlzXDKxZhBGSFe4k-XAzE0YkD1vc&s=19" alt="Bangkok">
-      <div class="card-body">
-        <h3>Bangkok, Thailand</h3>
-        <p>Famous for street food, temples, and vibrant nightlife.</p>
-        <span class="badge">Budget: $700 - $1200</span>
-      </div>
-    </div>
-  </main>
-
+  <!-- Footer -->
   <footer>
     <p>© 2026 Travel Planner. All rights reserved.</p>
   </footer>
